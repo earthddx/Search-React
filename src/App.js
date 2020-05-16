@@ -230,7 +230,7 @@ const plants = [
 ];
 
 const searchingForFirstName = (term) => {
-  return (x) => x.title.toLowerCase().includes(term.toLowerCase()) || !term;
+  return (x) => x.title.toLowerCase().includes(term.toLowerCase()) ||x.info.toLowerCase().includes(term.toLowerCase()) || !term;
 };
 
 function App() {
